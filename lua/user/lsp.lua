@@ -1,5 +1,8 @@
-lvim.lsp.installer.setup.automatic_installation = false
 lvim.lsp.diagnostics.virtual_text = false -- dont show diagnostics until gl
+vim.list_extend(
+  lvim.lsp.automatic_configuration.skipped_servers,
+  { "clangd", "rust_analyzer", "java_language_server", "jdtls" }
+)
 
 lvim.lsp.null_ls.setup = {
   log = {
