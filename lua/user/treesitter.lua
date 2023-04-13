@@ -16,12 +16,11 @@ lvim.builtin.treesitter.autotag.enable = true
 lvim.builtin.treesitter.auto_install = false
 lvim.builtin.treesitter.textobjects = {
   select = {
-    enable = false,
+    enable = true,
     -- Automatically jump forward to textobj, similar to targets.vim
     lookahead = true,
     keymaps = {
       -- You can use the capture groups defined in textobjects.scm
-      -- TODO Not work
       ["af"] = "@function.outer",
       ["if"] = "@function.inner",
       ["at"] = "@class.outer",
