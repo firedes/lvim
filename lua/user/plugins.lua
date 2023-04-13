@@ -1,8 +1,8 @@
 lvim.plugins = {
-  "navarasu/onedark.nvim",
-  "windwp/nvim-spectre",
-  "kylechui/nvim-surround",
-  "windwp/nvim-ts-autotag",
-  "nvim-treesitter/nvim-treesitter-textobjects",
-  "ggandor/leap.nvim",
+  { "navarasu/onedark.nvim", lazy = lvim.colorscheme ~= "onedark" },
+  { "windwp/nvim-spectre", lazy = true },
+  { "kylechui/nvim-surround", lazy = true },
+  { "windwp/nvim-ts-autotag", lazy = true },
+  { "nvim-treesitter/nvim-treesitter-textobjects", lazy = true },
+  { "ggandor/leap.nvim", lazy = true },
 }
