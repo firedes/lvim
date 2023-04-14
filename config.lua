@@ -1,5 +1,5 @@
-reload "user.plugins"
 reload "user.options"
+reload "user.plugins"
 reload "user.onedark"
 reload "user.autocommands"
 reload "user.cmp"
