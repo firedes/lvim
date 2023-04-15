@@ -1,3 +1,4 @@
+lvim.builtin.telescope.theme = "ivy"
 lvim.builtin.telescope.defaults.file_ignore_patterns = {
   ".git/",
   "target/",
