@@ -1,5 +1,11 @@
-local status_ok, leap = pcall(require, "leap")
-if not status_ok then
-  return
+local M = {}
+
+function M.setup()
+  local status_ok, leap = pcall(require, "leap")
+  if not status_ok then
+    return
+  end
+  leap.add_default_mappings()
 end
-leap.add_default_mappings()
+
+return M
