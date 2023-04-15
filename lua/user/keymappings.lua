@@ -12,10 +12,13 @@ lvim.keys.insert_mode["<A-o>"] = "<Esc>O"
 -- lvim.keys.normal_mode["<CR>"] = "<Esc>i<CR><Esc>" -- this will make quikfix jump failed
 
 -- Word navigate in insert mode
-lvim.keys.insert_mode["<C-h>"] = "<C-o>h"
-lvim.keys.insert_mode["<C-l>"] = "<C-o>l"
-lvim.keys.insert_mode["<C-e>"] = "<C-o>e<C-o>l"
-lvim.keys.insert_mode["<C-b>"] = "<C-o>b"
+lvim.keys.insert_mode["<C-j>"] = "<Left>"
+lvim.keys.insert_mode["<C-k>"] = "<Right>"
+-- lvim.keys.insert_mode["<C-e>"] = "<Esc>ea"
+lvim.keys.insert_mode["<C-e>"] = "<C-Right>"
+-- lvim.keys.insert_mode["<C-b>"] = "<C-o>b"
+lvim.keys.insert_mode["<C-b>"] = "<C-Left>"
+lvim.keys.insert_mode["<C-l>"] = "<End>"
 -- Delete character after cursor
 lvim.keys.insert_mode["<C-f>"] = "<Del>"
 -- Delete all characters after cursor
