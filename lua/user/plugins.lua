@@ -12,4 +12,9 @@ lvim.plugins = {
     keys = { "s", "S" },
     lazy = true,
   },
+  {
+    "elkowar/yuck.vim",
+    ft = "yuck",
+    lazy = true,
+  }
 }
