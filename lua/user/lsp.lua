@@ -15,7 +15,7 @@ local linters = require "lvim.lsp.null-ls.linters"
 
 formatters.setup {
   { command = "stylua", filetypes = { "lua" } },
-  { command = "shellharden", filetypes = { "sh", "zsh", "bash" } },
+  -- { command = "shellharden", filetypes = { "sh", "zsh", "bash" } },
   { command = "shfmt", filetypes = { "sh", "zsh", "bash" } },
   { command = "prettier", filetypes = { "css", "scss" } },
   { command = "black", filetypes = { "python" } },
