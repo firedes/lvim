@@ -5,22 +5,29 @@ lvim.keys.insert_mode["<A-h>"] = "<cmd>BufferLineCyclePrev<CR><Esc>"
 lvim.keys.insert_mode["<A-l>"] = "<cmd>BufferLineCycleNext<CR><Esc>"
 
 -- New blank line up and down
-lvim.keys.normal_mode["<A-i>"] = "<Esc>:set paste<CR>o<Esc>:set nopaste<CR>"
-lvim.keys.normal_mode["<A-o>"] = "<Esc>:set paste<CR>O<Esc>:set nopaste<CR>"
-lvim.keys.insert_mode["<A-i>"] = "<Esc>o"
-lvim.keys.insert_mode["<A-o>"] = "<Esc>O"
+lvim.keys.normal_mode["<A-j>"] = "<Esc>:set paste<CR>o<Esc>:set nopaste<CR>"
+lvim.keys.normal_mode["<A-k>"] = "<Esc>:set paste<CR>O<Esc>:set nopaste<CR>"
+lvim.keys.insert_mode["<A-j>"] = "<Esc>o"
+lvim.keys.insert_mode["<A-k>"] = "<Esc>O"
+
+lvim.keys.normal_mode["<A-Down>"] = ":m .+1<CR>=="
+lvim.keys.normal_mode["<A-Up>"] = ":m .-2<CR>=="
+lvim.keys.insert_mode["<A-Down>"] = "<Esc>:m .+1<CR>==gi"
+lvim.keys.insert_mode["<A-Up>"] = "<Esc>:m .-2<CR>==gi"
 -- lvim.keys.normal_mode["<CR>"] = "<Esc>i<CR><Esc>" -- this will make quikfix jump failed
 
 -- Word navigate in insert mode
-lvim.keys.insert_mode["<C-j>"] = "<Left>"
-lvim.keys.insert_mode["<C-k>"] = "<Right>"
 -- lvim.keys.insert_mode["<C-e>"] = "<Esc>ea"
 lvim.keys.insert_mode["<C-e>"] = "<C-Right>"
 -- lvim.keys.insert_mode["<C-b>"] = "<C-o>b"
 lvim.keys.insert_mode["<C-b>"] = "<C-Left>"
-lvim.keys.insert_mode["<C-l>"] = "<End>"
--- Delete character after cursor
-lvim.keys.insert_mode["<C-f>"] = "<Del>"
+lvim.keys.insert_mode["<C-h>"] = "<Left>"
+lvim.keys.insert_mode["<C-l>"] = "<Right>"
+lvim.keys.insert_mode["<C-a>"] = "<Home>"
+lvim.keys.insert_mode["<C-;>"] = "<End>"
+-- Delete character before/after cursor
+lvim.keys.insert_mode["<C-j>"] = "<Backspace>"
+lvim.keys.insert_mode["<C-k>"] = "<Del>"
 -- Delete all characters after cursor
 lvim.keys.insert_mode["<C-d>"] = "<Esc>lC"
 
