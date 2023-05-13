@@ -10,11 +10,16 @@ lvim.plugins = {
       require("user.leap").setup()
     end,
     keys = { "s", "S" },
-    lazy = true,
   },
   {
     "elkowar/yuck.vim",
     ft = "yuck",
-    lazy = true,
-  }
+  },
+  {
+    "NvChad/nvim-colorizer.lua",
+    config = function()
+      require("user.colorizer").setup()
+    end,
+    ft = { "lua", "css", "scss" },
+  },
 }
