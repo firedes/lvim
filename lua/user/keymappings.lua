@@ -23,13 +23,15 @@ lvim.keys.insert_mode["<C-e>"] = "<C-Right>"
 lvim.keys.insert_mode["<C-b>"] = "<C-Left>"
 lvim.keys.insert_mode["<C-h>"] = "<Left>"
 lvim.keys.insert_mode["<C-l>"] = "<Right>"
+lvim.keys.insert_mode["<C-j>"] = "<Down>"
+lvim.keys.insert_mode["<C-k>"] = "<Up>"
 lvim.keys.insert_mode["<C-a>"] = "<Home>"
 lvim.keys.insert_mode["<C-;>"] = "<End>"
 -- Delete character before/after cursor
-lvim.keys.insert_mode["<C-j>"] = "<Backspace>"
-lvim.keys.insert_mode["<C-k>"] = "<Del>"
+lvim.keys.insert_mode["<C-d>"] = "<Backspace>"
+lvim.keys.insert_mode["<C-f>"] = "<Del>"
 -- Delete all characters after cursor
-lvim.keys.insert_mode["<C-d>"] = "<Esc>lC"
+lvim.keys.insert_mode["<C-g>"] = "<Esc>lC"
 
 -- Telescope
 lvim.keys.insert_mode["<C-p>"] = "<cmd>lua require('lvim.core.telescope.custom-finders').find_project_files()<CR>"
