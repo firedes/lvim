@@ -6,6 +6,7 @@ lvim.format_on_save.enabled = false
 lvim.reload_config_on_save = false
 
 vim.opt.relativenumber = true -- set relative numbered lines
+vim.opt.cmdheight = 1
 vim.cmd "syntax on"
 -- TODO Not work
 -- vim.opt.foldmethod = "expr"                   -- folding, set to "expr" for treesitter based folding

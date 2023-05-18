@@ -1,9 +1,9 @@
 lvim.builtin.which_key.mappings["s"] = nil
+lvim.builtin.which_key.mappings["c"] = nil
 
 lvim.builtin.which_key.mappings["b"] = {
   name = "Buffer",
   b = { "<cmd>Telescope buffers<cr>", "Buffers" },
-  o = { "<cmd>BufferLineCloseRight<cr><cmd>BufferLineCloseLeft<cr>", "Close Others" },
 }
 
 lvim.builtin.which_key.mappings["f"] = {
