@@ -8,9 +8,9 @@ lvim.keys.normal_mode["<A-.>"] = "<cmd>BufferLineMoveNext<CR>"
 lvim.keys.insert_mode["<A-,>"] = "<cmd>BufferLineMovePrev<CR>"
 lvim.keys.insert_mode["<A-.>"] = "<cmd>BufferLineMoveNext<CR>"
 -- Close buffers
-lvim.keys.normal_mode["<A-`>"] = "<cmd>BufferKill<CR>"
+lvim.keys.normal_mode["<A-q>"] = "<cmd>BufferKill<CR>"
 lvim.keys.normal_mode["<A-o>"] = "<cmd>BufferLineCloseRight<cr><cmd>BufferLineCloseLeft<cr>"
-lvim.keys.insert_mode["<A-`>"] = "<cmd>BufferKill<CR>"
+lvim.keys.insert_mode["<A-q>"] = "<cmd>BufferKill<CR>"
 lvim.keys.insert_mode["<A-o>"] = "<cmd>BufferLineCloseRight<cr><cmd>BufferLineCloseLeft<cr>"
 
 -- New blank line up and down
