@@ -20,6 +20,7 @@ formatters.setup {
   { command = "shfmt", filetypes = { "sh", "zsh", "bash" } },
   { command = "prettier", filetypes = { "css", "scss" } },
   { command = "black", filetypes = { "python" } },
+  -- { command = "rustfmt", filetypes = { "rust" } },
 }
 
 linters.setup {
